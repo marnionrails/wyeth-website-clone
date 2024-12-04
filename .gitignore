@@ -1,0 +1,13 @@
+# Editor Configs
+.vscode/
+
+# Temporary Files
+*.log
+*.swp
+*.tmp
+*.cache
+*.backup
+
+
+# OS-Specific Files
+Thumbs.db
