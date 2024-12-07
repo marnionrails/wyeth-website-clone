@@ -20,46 +20,69 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-    background: #f2f2f2;
+    padding: 12px;
+    background: rgb(242, 242, 242);
+    color: rgb(107, 107, 107);
+    font-family: Inter, "Helvetica Neue", Helvetica, sans-serif;
+    opacity: 1;
+    border-bottom: 1px solid rgba(107, 107, 107, 0.2);
 }
 
 .button-max-width-911 button {
     display: flex;
     position: absolute;
     flex-direction: column;
-    gap: 4px;
-    padding:0;
+    gap: 6px;
+    padding: 0;
     left: 10px;
-    /* margin-left: 5px; */
+    outline: none;
+    border: none;
+    background: none;
+    /* top: 23px; */
+    border-color: black;
 }
 
 .button-max-width-911 button span {
     display: block;
-    width: 25px;
+    width: 28px;
+    margin: 1px;
     height: 1px;
-    background-color: #333;
-    color: #6b6b6b;
+    background-color: rgb(107, 107, 107);
 }
-
 
 .button-max-width-911 .menu-title {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 25px;
-    height: 2px;
-    left: 40px;
-    top: 16px;
+    font-size: 13px;
+    left: 45px;
+    top: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .button-max-width-911 h1 {
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 200;
+    letter-spacing: 0.4em;
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
 }
 
+.icon-search {
+    position: absolute;
+    display: flex;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    stroke-width: 1.2;
+}
 /* Move media query to the end */
 @media screen and (min-width: 912px) {
     .button-max-width-911,
@@ -117,6 +140,32 @@ footer {
     border: none;
     padding: 0;
 } */
+
+.button-max-width-911 button:focus {
+    /* Optional: add a subtle focus style for accessibility */
+    box-shadow: 0 0 0 2px rgba(107, 107, 107, 0.2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.eot');
+    src: url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.eot?#iefix') format('embedded-opentype'),
+         url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.woff2') format('woff2'),
+         url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.woff') format('woff'),
+         url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.ttf') format('truetype'),
+         url('https://db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e8f.svg#Helvetica Neue LT Std 25 Ultra Light') format('svg');
+}
+
+.icon-cart {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 50%;
+    width: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    stroke-width: 1.2;
+}
 
 
 
