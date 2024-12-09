@@ -95,6 +95,8 @@
                 $('.hamburger-icon').hide();
                 $('.X-icon').show();
                 $('.dropdown-menu').show();
+                $('.search-bar').hide();
+                searchBar = false;
                 isX = true;
             } else {
                 $('.hamburger-icon').show();
@@ -107,6 +109,9 @@
         $('.icon-search').on('click', function(){
             if(!searchBar){
                 $('.search-bar').show();
+                $('.dropdown-menu').hide();
+                $('.X-icon').hide();
+                $('.hamburger-icon').show();
                 searchBar = true;
             } else {
                 $('.search-bar').hide();
@@ -114,9 +119,6 @@
             }
         });
 
-        $('.icon-cart').on('click', function(){
-            $('.cart-bar').show();
-        });
     </script>
 </body>
 </html>
