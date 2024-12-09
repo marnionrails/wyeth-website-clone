@@ -39,6 +39,12 @@
             <circle cx="9" cy="9" r="9" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"></circle>
             <line x1="15" y1="15" x2="24" y2="24" stroke="rgb(107, 107, 107)" vector-effect="non-scaling-stroke"></line>
         </svg>
+        <form class ="search-bar">
+            <input type = "search"
+                   placeholder = "Search"
+                   aria-label = "Search products and furniture"
+                   class = "search-input">
+        </form>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="24" class="icon-cart" shape-rendering="geometricPrecision">
             <!-- Bag body with diagonal sides and top line -->
             <path d="M5 8H19L21 22H3L5 6" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"/>
@@ -59,10 +65,11 @@
             <!-- Right handle - upper part -->
             <path d="M16 8V2L12 0" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"/>
             <!-- Left handle - lower part (thicker) -->
-            <path d="M8 8V14" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke" stroke-width="2.5"/>
+            <path d="M8 8V14" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"/>
             <!-- Right handle - lower part (thicker) -->
-            <path d="M16 8V14" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke" stroke-width="2.5"/>
+            <path d="M16 8V14" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"/>
         </svg>
+        <span class = "cart-items">0</span>
     </header>
     <main>
         <section id="home" class="hero" position = "relative">
@@ -80,6 +87,8 @@
     <script>
 
         let isX = false;
+        let searchBar = false;
+        let cartBar = false;
 
         $('button').on('click', function(){
             if(!isX){
@@ -93,6 +102,20 @@
                 $('.dropdown-menu').hide();
                 isX = false;
             }
+        });
+
+        $('.icon-search').on('click', function(){
+            if(!searchBar){
+                $('.search-bar').show();
+                searchBar = true;
+            } else {
+                $('.search-bar').hide();
+                searchBar = false;
+            }
+        });
+
+        $('.icon-cart').on('click', function(){
+            $('.cart-bar').show();
         });
     </script>
 </body>
