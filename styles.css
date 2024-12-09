@@ -39,6 +39,8 @@ body {
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .button-max-width-911 button .hamburger-icon {
@@ -61,8 +63,8 @@ body {
     flex-direction: column;
     position: absolute;
     font-size: 13px;
-    left: 45px;
-    top: 23px;
+    left: 35px;
+    bottom: 3px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
@@ -88,6 +90,8 @@ body {
     transform: translateY(-50%);
     cursor: pointer;
     stroke-width: 1.2;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 /* Move media query to the end */
 @media screen and (min-width: 912px) {
@@ -166,6 +170,8 @@ footer {
     transform: translateY(-50%);
     cursor: pointer;
     stroke-width: 1.2;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 
