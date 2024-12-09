@@ -25,7 +25,7 @@ body {
     color: rgb(107, 107, 107);
     font-family: Inter, "Helvetica Neue", Helvetica, sans-serif;
     opacity: 1;
-    border-bottom: 1px solid rgba(107, 107, 107, 0.2);
+    border-bottom: 1px solid rgb(242, 242, 242);
 }
 
 .button-max-width-911 button {
@@ -68,6 +68,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(107, 107, 107);
+
 }
 
 .button-max-width-911 h1 {
@@ -103,6 +105,21 @@ body {
     }
 }
 
+.dropdown-menu {
+    display: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+}
+
+.dropdown-menu-ul li {
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -111,7 +128,9 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 15px;
+    margin-right: 18px;
+    font-weight: 500;
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 nav ul li a {
@@ -173,6 +192,37 @@ footer {
     -webkit-tap-highlight-color: transparent;
     user-select: none;
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(242, 242, 242);
+    z-index: 1000;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-menu ul li {
+    margin-right: 15px;
+}
+
+.dropdown-menu ul li a {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
 
 
 

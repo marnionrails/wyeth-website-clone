@@ -25,6 +25,15 @@
             </svg>
             <span class = "menu-title">MENU</span>
     </button>
+        <nav class="dropdown-menu">
+            <ul class="dropdown-menu-ul">
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#wyeth-originals">WYETH ORIGINALS</a></li>
+                <li><a href="#showroom">SHOWROOM</a></li>
+                <li><a href="#rent">RENT</a></li>
+                <li><a href="#login">LOGIN</a></li>
+            </ul>
+        </nav>
         <h1 class = "hero">WYETH</h1>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="24" class="icon-search" shape-rendering="geometricPrecision">
             <circle cx="9" cy="9" r="9" stroke="rgb(107, 107, 107)" fill="none" vector-effect="non-scaling-stroke"></circle>
@@ -76,10 +85,12 @@
             if(!isX){
                 $('.hamburger-icon').hide();
                 $('.X-icon').show();
+                $('.dropdown-menu').show();
                 isX = true;
             } else {
                 $('.hamburger-icon').show();
                 $('.X-icon').hide();
+                $('.dropdown-menu').hide();
                 isX = false;
             }
         });
