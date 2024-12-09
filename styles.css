@@ -31,23 +31,29 @@ body {
 .button-max-width-911 button {
     display: flex;
     position: absolute;
-    flex-direction: column;
-    gap: 6px;
     padding: 0;
     left: 10px;
     outline: none;
     border: none;
     background: none;
-    /* top: 23px; */
-    border-color: black;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.button-max-width-911 button span {
+.button-max-width-911 button .hamburger-icon {
     display: block;
-    width: 28px;
-    margin: 1px;
-    height: 1px;
-    background-color: rgb(107, 107, 107);
+    stroke-width: 1;
+}
+
+.button-max-width-911 button .X-icon {
+    display: none;
+    stroke-width: 1;
+}
+
+/* Optional: Add hover effect */
+.button-max-width-911 button:hover .hamburger-icon line {
+    stroke: rgba(107, 107, 107, 0.7);
 }
 
 .button-max-width-911 .menu-title {
@@ -140,11 +146,6 @@ footer {
     border: none;
     padding: 0;
 } */
-
-.button-max-width-911 button:focus {
-    /* Optional: add a subtle focus style for accessibility */
-    box-shadow: 0 0 0 2px rgba(107, 107, 107, 0.2);
-}
 
 @font-face {
     font-family: 'Helvetica Neue';
