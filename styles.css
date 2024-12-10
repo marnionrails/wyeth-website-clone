@@ -138,6 +138,34 @@ body {
     user-select: none;
 }
 
+.carousel {
+    width: 100%;
+}
+
+.carousel-cell {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-container figure {
+    margin: 0;
+    padding: 0;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+section.hero {
+    display: inline;
+}
 /* Move media query to the end */
 @media screen and (min-width: 912px) {
     .button-max-width-911,
