@@ -99,18 +99,20 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left:0;
+    right:0;
+    margin: 0 auto;
     background: rgb(242, 242, 242);
     z-index: 1000;
     border-bottom: 1px solid rgba(107, 107, 107, 0.2);
 }
 
 .search-bar input {
-    width: 100%;
-    padding: 20px 20px;
+    width: calc(100% - 40px);
+    padding: 10px 20px 5px 10px;
+    margin: 0 20px 20px 20px;
     border: none;
-    border-bottom: 1px solid rgba(107, 107, 107, 0.2);
+    border-bottom: 1px solid rgb(107, 107, 107);
     background: transparent;
     font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
@@ -124,6 +126,17 @@ body {
     letter-spacing: 0.05em;
 }
 
+.search-bar .icon-search-confirm {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    top: 50%;
+    transform: translateY(-80%);
+    cursor: pointer;
+    stroke-width: 1.2;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
 
 /* Move media query to the end */
 @media screen and (min-width: 912px) {
