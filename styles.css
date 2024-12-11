@@ -191,40 +191,6 @@ section.hero {
     padding-left: 15px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 18px;
-    font-weight: 500;
-    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    background: #f4f4f4;
-    padding: 0px;
-    text-align: center;
-}
-
-/* .hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1;
-} */
-
 footer {
     background: #333;
     color: #fff;
@@ -232,14 +198,6 @@ footer {
     padding: 10px;
 }
 
-/* .button-max-width-911 button {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    background: none;
-    border: none;
-    padding: 0;
-} */
 
 @font-face {
     font-family: 'Helvetica Neue';
@@ -298,6 +256,35 @@ footer {
     color: rgb(107, 107, 107);
     text-decoration: none;
     font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* More specific than just .flickity-button */
+.carousel .flickity-button {
+    background: transparent;  /* This should now override the default */
+    border: none;
+}
+
+/* More specific than just .flickity-prev-next-button */
+.carousel .flickity-prev-next-button {
+    width: 30px;  /* This should now override the default 44px */
+    height: 30px;
+    color: rgb(107, 107, 107);
+}
+
+/* Position the previous button further left */
+.flickity-prev-next-button.previous {
+    left: -5px;  /* Increase this value to move it more left */
+}
+
+/* Position the next button further right */
+.flickity-prev-next-button.next {
+    right: -5px;  /* Increase this value to move it more right */
+}
+
+/* Make the arrow icons thinner */
+.carousel .flickity-button-icon {
+    stroke-width: 1;  /* Decrease this value to make arrows thinner */
+    fill: rgb(107, 107, 107);
 }
 
 
