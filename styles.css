@@ -87,7 +87,7 @@ body {
 .icon-search {
     position: absolute;
     display: flex;
-    right: 55px;
+    right: 60px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -99,7 +99,7 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
     left:0;
     right:0;
     margin: 0 auto;
@@ -130,7 +130,7 @@ body {
     position: absolute;
     right: 30px;
     bottom: 10px;
-    top: 65%;
+    top: 55%;
     transform: translateY(-80%);
     cursor: pointer;
     stroke-width: 1.2;
@@ -181,14 +181,25 @@ section.hero {
     -webkit-tap-highlight-color: transparent;
     user-select: none;
     font-size: 12px;
+    font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
     color: rgb(107, 107, 107);
+    padding-left: 15px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(107, 107, 107, 0.1); 
 }
 
 .dropdown-menu-ul li {
     list-style-type: none;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
+    color: rgb(83, 83, 83);
+    letter-spacing: 0.07em;
+    font-weight: 550;
+}
+
+.dropdown-menu-ul li:nth-last-child(1) {
+    padding-bottom: 25px;
 }
 
 footer {
@@ -286,9 +297,3 @@ footer {
     stroke-width: 1;  /* Decrease this value to make arrows thinner */
     fill: rgb(107, 107, 107);
 }
-
-
-
-
-
-
