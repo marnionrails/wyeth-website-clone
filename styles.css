@@ -15,6 +15,12 @@ body {
     }
 }
 
+main {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .button-max-width-911 {
     display: flex;
     position: relative;
@@ -26,6 +32,10 @@ body {
     font-family: Inter, "Helvetica Neue", Helvetica, sans-serif;
     opacity: 1;
     border-bottom: 1px solid rgb(242, 242, 242);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .button-max-width-911 button {
@@ -140,6 +150,9 @@ body {
 
 .carousel {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .carousel-cell {
