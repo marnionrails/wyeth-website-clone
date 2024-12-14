@@ -1,9 +1,10 @@
-body {
+html, body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: rgb(107, 107, 107);
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 912px) {
