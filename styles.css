@@ -8,10 +8,7 @@ html, body {
 }
 
 @media screen and (min-width: 912px) {
-    .button-max-width-911,
-    .button-max-width-911 button,
-    .button-max-width-911 button span,
-    .button-max-width-911 .menu-title {
+    .button-max-width-911 {
         display: none;
     }
 }
