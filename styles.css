@@ -320,3 +320,10 @@ article.recent-additions-carousel {
     display: block;
 }
 
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    width: 200px;
+    background: transparent;  /* Remove any background color */
+}
