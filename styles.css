@@ -39,6 +39,7 @@ html, body {
     transform: translateY(-50%);
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+    height: 40px;
 }
 
 .button-max-width-911 button .hamburger-icon {
@@ -58,11 +59,12 @@ html, body {
 
 .button-max-width-911 .menu-title {
     display: flex;
-    flex-direction: column;
     position: absolute;
     font-size: 13px;
     left: 35px;
-    bottom: 3px;
+    top: 40%;
+    /* transform: translateY(-50%); */
+    /* bottom: 3px; */
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
