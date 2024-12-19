@@ -224,7 +224,7 @@ footer {
     position: absolute;
     display: flex;
     right: 18px;
-    top: calc(50% + 5px);
+    top: calc(50% + 2px);
     width: 20px;
     transform: translateY(-50%);
     cursor: pointer;
@@ -233,13 +233,24 @@ footer {
     user-select: none;
 }
 
-.button-max-width-911::before {
+/* .button-max-width-911::before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     border-top: 1px dashed red;
+} */
+
+.js-loading {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    visibility: hidden;
+}
+
+.js-loading.loaded {
+    opacity: 1;
+    visibility: visible;
 }
 
 .cart-items {
